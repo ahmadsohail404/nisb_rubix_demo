@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+.info {
+  min-width: 100vw;
+  min-height: 1rem;
+  background-color: #fff;
+}
+
+#cross {
+  cursor: pointer;
+}
+
+nav {
+  background-color: #3944f7;
+  min-height: 3rem;
+  min-width: 100vw;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.title-text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  margin: 0;
+}
+#home {
+  background-color: #242b2e;
+  min-height: calc(100% - 3.5rem);
+  min-width: 100vw;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 35vh;
+  z-index: -1;
+}
+.hero-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-footer > div {
+  height: 10vh;
+  width: 10vh;
+  border: 3px solid #3944f7;
+  border-radius: 50%;
+  margin: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#days:hover,
+#minutes:hover,
+#hours:hover,
+#secs:hover {
+  background-color: #3944f7;
+}
+
+.hero-top > div {
+  height: 3vh;
+  width: 6vh;
+  border: 3px solid #3944f7;
+  margin: 5px;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toEvent {
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+.toEvent > a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #3944f7;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toEvent > a:hover {
+  background-color: #fff;
+  color: #3944f7;
+}
+
+.toEvent > a > i {
+  font-size: 22px;
+}
+
+/* EVENTS */
+
+.event-nav {
+  background-color: #3944f7;
+  height: 30px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-nav > p {
+  margin: 0;
+  color: #fff;
+}
+
+.reg-btn {
+  width: fit-content;
+  text-decoration: none;
+}
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+
+#events {
+  min-height: 100%;
+  background-color: #242b2e;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer {
+  bottom: 20px;
+  color: #e52e71;
+  position: fixed;
+}
+
+.footer > h6 > span > a {
+  color: white;
+  text-decoration: none;
+}
+.footer > h6 > span > a:hover {
+  color: #e52e71;
+  text-decoration: none;
+}
+.fa-vuejs {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+.fa-vuejs {
+  font-size: 18px;
+  margin-left: 7px;
+}
+.fa-vuejs {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.footer h6 {
+  overflow: hidden;
+  border-right: 0.15em solid #3300ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3300ff;
+  }
+}
+.footer {
+  color: #fff;
+  font-size: 12px;
+  position: sticky;
+  bottom: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: #242b2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
