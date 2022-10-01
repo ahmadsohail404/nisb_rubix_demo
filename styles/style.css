@@ -9,7 +9,7 @@ html {
 }
 
 .info {
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 1rem;
   background-color: #fff;
 }
@@ -83,13 +83,13 @@ nav {
 
 @media (max-width: 520px) {
   .hero-footer > div {
-    height: 7vh;
-    width: 7vh;
+    height: 8vh;
+    width: 8vh;
     border: 3px solid #3944f7;
     border-radius: 50%;
     margin: 12px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
 }
 
 .toEvent > a {
@@ -225,16 +225,12 @@ nav {
   background-color: #242b2e;
 }
 
-.event-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .col-md-4 {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Footer */
@@ -330,4 +326,8 @@ nav {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+}
+
+.event-cards {
+  max-width: 95vw;
 }
