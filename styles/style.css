@@ -81,6 +81,22 @@ nav {
   justify-content: center;
 }
 
+@media (max-width: 520px) {
+  .hero-footer > div {
+    height: 7vh;
+    width: 7vh;
+    border: 3px solid #3944f7;
+    border-radius: 50%;
+    margin: 12px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 #days:hover,
 #minutes:hover,
 #hours:hover,
